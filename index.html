@@ -40,6 +40,8 @@
             main{
                 background: white;
                 padding: 10px;
+                display: flex;
+                flex: 1;
             }
 
             .fecha_rrss {
@@ -66,14 +68,24 @@
             .noticies {
                 border: 1px solid #c3c8c7;
                 padding: 10px;
-                display:flex;
+                display: flex;
                 flex-wrap: wrap;
+            }
+
+            #barra-lateral {
+                flex: 1;
+                background: #985050;
+                padding: 5px;
+            }
+
+            #barra-lateral header {
+                background: inherit;
             }
             
             /*#region Noticia */
 
             .noticia {
-                width: 50%;
+                width: 50%; 
                 box-sizing: border-box;
             }
             
@@ -233,64 +245,64 @@
                     <div class="separador-articulo"></div>
                 </article>
             </section>
-        </main>      
-        <aside id="barra-lateral">
-            <section>
-                <header>
-                    <h4>TKN en vídeo</h4>
-                </header>
-                <video autoplay muted width="250" src="videos/Badgers.mp4"></video>
-            </section>
-
-            <section>
-                <header>
-                    <h4>Clasificación</h4>
-                </header>
-                <ol>
-                    <li class="row-style">Liverpool</li>
-                    <li class="row-style">Arsenal FC</li>
-                    <li class="row-style">Nottingham Forest</li>
-                </ol>
-            </section>
-
-            <section>
-                <header>
-                    <h4>Equipo de TKN</h4>
-                </header>
-                <article>
+            <aside id="barra-lateral">
+                <section>
                     <header>
-                        <h5>Albert Quer Cufí</h5>
+                        <h4>TKN en vídeo</h4>
                     </header>
-                    <p>Amante del fútbol pero ante todo del Liverpool. In Brendan I Trust. Admin de TKN.</p>
-                    <p><strong>Contacto:</strong> albertq07@hotmail.com</p>
-                </article>
-                <article>
-                    <header>
-                        <h5>Ivan Campos</h5>
-                    </header>
-                    <p>Siguiendo al Liverpool desde Veracruz, México. Afortunado por escribir en TKN y agradecido con Dios por darnos el deporte más bonito del mundo, el fútbol.</p>
-                    <p><strong>Contacto:</strong> Ivan.sg.8@gmail.com</p>
-                </article>
-                <article>
-                    <header>
-                        <h5>Pablo Benítez</h5>
-                    </header>
-                    <p>Pablo 31 años, desde Argentina, ciudad de Rosario, un seguidor incondicional del club de Anfield. Un placer brindar información sobre el club más grande del mundo.</p>
-                    <p><strong>Contacto:</strong> pdfliverpool111@gmail.com</p>
-                </article>
-                <button id="open_anunci">Abrir anuncio</button>
-                <dialog id="anunci">
-                    <h3>¡Eres el visitante nº 10.000!</h3>
-                    <p><strong>Enhorabuena!</strong> Has ganado el maravilloso premio de irte a tomar por culo.</p>
-                    <button id="close_anunci">Cerrar</button>
-                </dialog>
-                <script>
-                    window.open_anunci.addEventListener('click', () => { window.anunci.showModal()})
-                    window.close_anunci.addEventListener('click', () => window.anunci.close())
-                </script>
+                    <video autoplay muted width="100%" src="videos/Badgers.mp4"></video>
+                </section>
     
-            </section>
-        </aside>
+                <section>
+                    <header>
+                        <h4>Clasificación</h4>
+                    </header>
+                    <ol>
+                        <li class="row-style">Liverpool</li>
+                        <li class="row-style">Arsenal FC</li>
+                        <li class="row-style">Nottingham Forest</li>
+                    </ol>
+                </section>
+    
+                <section>
+                    <header>
+                        <h4>Equipo de TKN</h4>
+                    </header>
+                    <article>
+                        <header>
+                            <h5>Albert Quer Cufí</h5>
+                        </header>
+                        <p>Amante del fútbol pero ante todo del Liverpool. In Brendan I Trust. Admin de TKN.</p>
+                        <p><strong>Contacto:</strong> albertq07@hotmail.com</p>
+                    </article>
+                    <article>
+                        <header>
+                            <h5>Ivan Campos</h5>
+                        </header>
+                        <p>Siguiendo al Liverpool desde Veracruz, México. Afortunado por escribir en TKN y agradecido con Dios por darnos el deporte más bonito del mundo, el fútbol.</p>
+                        <p><strong>Contacto:</strong> Ivan.sg.8@gmail.com</p>
+                    </article>
+                    <article>
+                        <header>
+                            <h5>Pablo Benítez</h5>
+                        </header>
+                        <p>Pablo 31 años, desde Argentina, ciudad de Rosario, un seguidor incondicional del club de Anfield. Un placer brindar información sobre el club más grande del mundo.</p>
+                        <p><strong>Contacto:</strong> pdfliverpool111@gmail.com</p>
+                    </article>
+                    <button id="open_anunci">Abrir anuncio</button>
+                    <dialog id="anunci">
+                        <h3>¡Eres el visitante nº 10.000!</h3>
+                        <p><strong>Enhorabuena!</strong> Has ganado el maravilloso premio de irte a tomar por culo.</p>
+                        <button id="close_anunci">Cerrar</button>
+                    </dialog>
+                    <script>
+                        window.open_anunci.addEventListener('click', () => { window.anunci.showModal()})
+                        window.close_anunci.addEventListener('click', () => window.anunci.close())
+                    </script>
+        
+                </section>
+            </aside>
+        </main>      
 
 
         <!--FORMULARI ENTRADA DADES-->
